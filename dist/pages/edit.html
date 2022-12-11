@@ -1,0 +1,109 @@
+<div class="form">
+  <div class="topBar">
+    <h1>Event Manager App</h1>
+    <button id="cancel">Cancel</button>
+  </div>
+
+  <div class="middleWrapper">
+    <div class="createSection">
+      <div class="header">
+        <h2>Edit your event:</h2>
+        <button id="deleteNote">Delete Event</button>
+      </div>
+
+      <div class="createForm">
+        <!-- Event Name -->
+        <div class="eventName">
+          <label for="eventName">Event Name: <span>*</span></label>
+          <input type="text" id="eventName" placeholder="event name" />
+        </div>
+
+        <!-- Event Date -->
+        <label for="eventDate" id="eventDateTag">Date: <span>*</span></label>
+        <div class="eventDate">
+          <select name="months" id="eventMonth">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+          <input type="text" id="eventDay" placeholder="dd" maxlength="2" />
+          <input type="text" id="eventYear" placeholder="yyyy" maxlength="4" />
+        </div>
+
+        <!-- Event Time Frame -->
+        <label for="eventTimeStart" id="eventTimeFrameTag">Time Frame:</label>
+        <div class="eventTimeStart">
+          <input
+            type="text"
+            id="eventTimeStartHour"
+            placeholder="hh"
+            maxlength="2"
+          />
+          :
+          <input
+            type="text"
+            id="eventTimeStartMinute"
+            placeholder="mm"
+            maxlength="2"
+          />
+          <select name="eventTimeStartHours" id="eventTimeStartCycle">
+            <option value="a.m.">A.M.</option>
+            <option value="p.m.">P.M.</option>
+          </select>
+        </div>
+        <label for="eventTimeEnd" id="eventTimeEndTag">to</label>
+        <div class="eventTimeEnd" id="eventTimeEnd">
+          <input
+            type="text"
+            id="eventEndStartHour"
+            placeholder="hh"
+            maxlength="2"
+          />
+          :
+          <input
+            type="text"
+            id="eventEndStartMinute"
+            placeholder="mm"
+            maxlength="2"
+          />
+          <select name="eventTimeEndHours" id="eventTimeEndCycle">
+            <option value="a.m.">A.M.</option>
+            <option value="p.m.">P.M.</option>
+          </select>
+        </div>
+
+        <!-- Attendees -->
+        <div class="attendeeDiv">
+          <label for="eventAttendees">Number of Attendees:</label>
+          <input type="text" id="eventAttendees" placeholder="#" />
+        </div>
+
+        <!-- Event Summary -->
+        <div class="summaryDiv">
+          <label for="eventSummary">Summary:</label>
+          <input type="text" id="eventSummary" placeholder="summary" />
+        </div>
+
+        <!-- To-do List -->
+        <div class="todoDiv">
+          <label for="eventToDo">To-do:</label>
+          <!-- make addable input fields?? like in doc. -->
+          <input type="text" id="eventToDo" placeholder="to-do" />
+        </div>
+      </div>
+
+      <button id="editNote">Update Event</button>
+    </div>
+  </div>
+
+  <div class="bottomBar"></div>
+</div>

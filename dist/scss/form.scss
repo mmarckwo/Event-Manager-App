@@ -1,0 +1,175 @@
+.form {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: $orange;
+
+    h1 {
+      color: white;
+      margin-left: 20px;
+      margin-bottom: 6px;
+    }
+
+    button {
+      margin-right: 20px;
+      height: 50px;
+      padding: 10px;
+      border: none;
+      background-color: white;
+      color: $orange;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(235, 235, 235);
+    }
+  }
+
+  .middleWrapper {
+    width: 100%;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      h2 {
+        margin-bottom: 0px;
+      }
+
+      #deleteNote {
+        margin: 0px;
+        margin-top: 10px;
+      }
+    }
+
+    .createSection {
+      padding: 10px;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+
+      h2 {
+        color: $orange;
+        font-size: 26px;
+        margin-top: 4px;
+      }
+
+      .createForm {
+        color: white;
+        font-size: 18px;
+        background-color: $orange;
+        padding: 15px;
+
+        input {
+          height: 50px;
+          margin-bottom: 10px;
+          border: none;
+          padding-left: 10px;
+          font-weight: bold;
+          font-size: 16px;
+          margin-top: 10px;
+        }
+
+        select {
+          height: 50px;
+          margin-bottom: 10px;
+          border: none;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-weight: bold;
+          font-size: 16px;
+        }
+
+        label {
+          font-size: 20px;
+        }
+
+        .eventName {
+          input {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .eventDate {
+          #eventDay {
+            max-width: 100px;
+          }
+
+          #eventYear {
+            max-width: 100px;
+          }
+        }
+
+        .eventTimeStart {
+          #eventTimeStartHour,
+          #eventTimeStartMinute {
+            max-width: 100px;
+          }
+        }
+
+        .eventTimeEnd {
+          #eventEndStartHour,
+          #eventEndStartMinute {
+            max-width: 100px;
+          }
+        }
+
+        .attendeeDiv {
+          input {
+            display: block;
+          }
+        }
+
+        .summaryDiv {
+          input {
+            display: block;
+          }
+        }
+
+        .todoDiv {
+          input {
+            display: block;
+          }
+        }
+      }
+
+      button {
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        font-size: 24px;
+        width: fit-content;
+        background-color: $orange;
+        color: white;
+        border: 1px solid transparent;
+        cursor: pointer;
+      }
+
+      button:hover {
+        color: $orange;
+        background-color: white;
+        border: 1px solid $orange;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bottomBar {
+    height: 100px;
+    margin-top: auto;
+    background-color: $orange;
+  }
+}
