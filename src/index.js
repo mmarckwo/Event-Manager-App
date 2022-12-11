@@ -425,7 +425,7 @@ async function editListeners() {
 
       // send to home page.
       window.location.hash = "home";
-      alert("Note updated!");
+      alert("Event updated!");
     }
   });
 }
